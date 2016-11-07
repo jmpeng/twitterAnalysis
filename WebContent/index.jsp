@@ -182,6 +182,7 @@
 	</div>
 	<div id="myDiv" style="width: 700px; height: 700px;"></div>
 	<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+	<script type="text/javascript" src="js/d3.v2.min.js"></script>
 	<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
 	<script type="text/javascript" src="js/demo.js"></script>
 	<script type="text/javascript" src="js/personality.js"></script>

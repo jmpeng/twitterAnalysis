@@ -50,8 +50,8 @@
 			</fileset>
 			<lib dir="WebContent/WEB-INF/lib" />
 			<classes dir="build/bin" />
-			<classes dir="src/com/ibm/cloudoe/samples" includes="mobydick.txt" prefix="WEB-INF/classes/com/ibm/cloudoe/samples"/>
-			<classes dir="src/com/ibm/cloudoe/samples/i18n" includes="*.properties*" prefix="WEB-INF/classes/com/ibm/cloudoe/samples/i18n"/>
+			<classes dir="src/com/uwgroup10" includes="mobydick.txt" prefix="WEB-INF/classes/com/uwgroup10"/>
+			<classes dir="src/com/uwgroup10/i18n" includes="*.properties*" prefix="WEB-INF/classes/com/uwgroup10/i18n"/>
 		</war>
 	</target>
 

@@ -3,3 +3,5 @@ WebContent/WEB-INF/classes
 build/
 /output/webApp.war
 .DS_Store
+.idea/
+output/

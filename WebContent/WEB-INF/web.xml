@@ -6,15 +6,15 @@
 
   <display-name>Java Starter Application</display-name>
 	<welcome-file-list>
-		<welcome-file>demo</welcome-file>
+		<welcome-file>main</welcome-file>
 	</welcome-file-list>
 	<servlet>
-		<servlet-name>Application Servlet</servlet-name>
-		<servlet-class>com.ibm.cloudoe.samples.DemoServlet</servlet-class>
+		<servlet-name>app</servlet-name>
+		<servlet-class>com.uwgroup10.MainServlet</servlet-class>
 		<load-on-startup>1</load-on-startup>
 	</servlet>
 	<servlet-mapping>
-		<servlet-name>Application Servlet</servlet-name>
-		<url-pattern>/demo</url-pattern>
+		<servlet-name>app</servlet-name>
+		<url-pattern>/main</url-pattern>
 	</servlet-mapping>
 </web-app>
