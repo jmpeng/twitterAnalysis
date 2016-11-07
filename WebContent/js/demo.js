@@ -82,7 +82,7 @@ $(document).ready(function() {
         } else {
           $results.show();
           showTraits(response);
-          showTextSummary(response);
+          // showTextSummary(response);
           showVizualization(response);
         }
 
@@ -275,10 +275,12 @@ function showVizualization(theProfile) {
     $('.wordsCount').text(wordsCount);
   }
 
+  // load text data
   function onSampleTextChange() {
     var isEnglish = $('#english_radio').is(':checked');
-    language = isEnglish ? 'en' : 'es';
-
+    // language = isEnglish ? 'en' : 'es';
+    language = 'en';
+    
     $.get('text/' + language + '.txt').done(function(text) {
       $content.val(text);
       updateWordsCount();

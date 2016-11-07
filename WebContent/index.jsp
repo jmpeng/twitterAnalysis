@@ -140,7 +140,7 @@
     <script type="text/javascript" src="js/i18n.js"></script>
 	<script type="text/javascript" src="js/textsummary.js"></script>
     <script type="text/javascript">
-        textSummary.init('json');
+//        textSummary.init('json');
     </script>
 </body>
 </html>
