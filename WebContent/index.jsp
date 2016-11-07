@@ -8,7 +8,7 @@
 <!DOCTYPE html>
 <html lang="${language}">
 <head>
-<title><fmt:message key="application.title" /></title>
+<title>U</title>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -26,7 +26,7 @@
 					<a
 						href="http://www.ibm.com/smarterplanet/us/en/ibmwatson/developercloud/"
 						class="top-nav--logo-link"><h3 class="heading left">
-							IBM <span class="top-nav--logo-wdc">Watson Developer Cloud</span>
+							UWindsor University <span class="top-nav--logo-wdc">Watson Developer Cloud</span>
 						</h3></a>
 					<nav class="top-nav--nav">
 						<li class="top-nav--nav-item"><a
@@ -143,9 +143,9 @@
 						<h3><fmt:message key="application.label.personalityData"/></h3>
 						<div style="display: none;" class="col555px well traits"></div>
 					</div>
-					<div class="col-lg-7 col-xs-12 col-md-12">
+					<div>
 						<h3><fmt:message key="application.label.personalityVisualizationData"/></h3>
-						<div id="vizcontainer" class="well"></div>
+						<%--<div id="myDiv" style="width: 480px; height: 400px;"></div>--%>
 					</div>
 				</div>
 			</div>
@@ -180,8 +180,9 @@
 			</div>
 		</div>
 	</div>
+	<div id="myDiv" style="width: 700px; height: 700px;"></div>
 	<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
-	<script type="text/javascript" src="js/d3.v2.min.js"></script>
+	<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
 	<script type="text/javascript" src="js/demo.js"></script>
 	<script type="text/javascript" src="js/personality.js"></script>
     <script type="text/javascript" src="js/string-utils.js"></script>

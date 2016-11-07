@@ -122,13 +122,18 @@ $(document).ready(function() {
     var traitList = flatten(data.tree),
       table = $traits;
 
+    // console.log(traitList.toString());
+    // console.log(JSON.stringify(traitList, null, 2));
+
     table.empty();
 
     // Header
     $('#header-template').clone().appendTo(table);
 
+    // console.log('traitList.length: ' + traitList.length);
+
     // For each trait
-    for (var i = 0; i < traitList.length; i++) {
+    for (var i = 37; i < 47; i++) {
       var elem = traitList[i];
 
       var Klass = 'row';
@@ -182,6 +187,62 @@ $(document).ready(function() {
 function showVizualization(theProfile) {
   console.log('showVizualization()');
 
+  console.log('theProfile: ' + theProfile);
+
+  var traitList = flatten(theProfile.tree);
+  var arr = traitList.slice(37, 47);
+
+  console.log(arr);
+
+  var xx = [], yy = [], tt = [];
+  for (var i = 0; i < arr.length; i++) {
+    xx.push(arr[i].id);
+    console.log(xx);
+    var v = arr[i].value;
+    var vv = parseInt(v.substring(0, v.length - 1))
+    yy.push(vv);
+    console.log(yy);
+    tt = yy;
+  }
+
+  var trace1 = {
+    x: xx,
+    y: yy,
+    type: 'bar',
+    // text: tt,
+    marker: {
+      color: 'rgb(158,202,225)',
+      opacity: 0.6,
+      line: {
+        color: 'rbg(8,48,107)',
+        width: 1.5
+      }
+    }
+  };
+
+  var data = [trace1];
+  var annotationContent = [];
+
+  var layout = {
+    title: 'Report',
+    annotations: annotationContent
+  };
+
+  for(var i = 0 ; i < xx.length ; i++) {
+    var result = {
+      x: xx[i],
+      y: yy[i],
+      text: tt[i],
+      xanchor: 'center',
+      yanchor: 'bottom',
+      showarrow: false
+    };
+    annotationContent.push(result);
+  }
+
+  Plotly.newPlot('myDiv', data, layout);
+
+  /*
   $('#' + widgetId).empty();
   var d3vis = d3.select('#' + widgetId).append('svg:svg');
   var widget = {
@@ -260,6 +321,7 @@ function showVizualization(theProfile) {
   widget.expandAll.call(widget);
   if (personImageUrl)
     widget.addPersonImage.call(widget, personImageUrl);
+    */
 }
 
   /**
