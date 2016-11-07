@@ -7,6 +7,6 @@ applications:
 - services:
   - personality-insights-service
   name: myuwindsorgg10
-  path: webApp.war
+  path: output/webApp.war
   memory: 512M
   host: myuwindsorgg10
