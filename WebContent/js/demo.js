@@ -67,7 +67,7 @@ $(document).ready(function() {
    */
   $('.clear-btn').click(function(){
     $('.clear-btn').blur();
-    $content.val('');
+    $content.val('Please input text');
     updateWordsCount();
   });
 
