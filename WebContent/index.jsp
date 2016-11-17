@@ -81,8 +81,8 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-12 col-md-12 col-xs-12">
-				<h2>Text Input</h2>
-				<p>Please input text</p>
+				<h2>/Twitter search results/Text Input</h2>
+		<!--		<p>Please input text</p>   -->
 				<div class="well">
 					<div class="form-group row">
 						<div style="padding: 0px;" class="col-lg-12 col-xs-12">

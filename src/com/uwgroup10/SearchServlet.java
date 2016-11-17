@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.ibm.cloudoe.samples;
+package com.uwgroup10;
 
 import javax.servlet.*;
 import javax.servlet.http.*;
