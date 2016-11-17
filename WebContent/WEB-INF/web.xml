@@ -8,6 +8,7 @@
 	<welcome-file-list>
 		<welcome-file>main</welcome-file>
 	</welcome-file-list>
+
 	<servlet>
 		<servlet-name>app</servlet-name>
 		<servlet-class>com.uwgroup10.MainServlet</servlet-class>
@@ -17,13 +18,14 @@
 		<servlet-name>app</servlet-name>
 		<url-pattern>/main</url-pattern>
 	</servlet-mapping>
+
 	<servlet>
-		<servlet-name>app search</servlet-name>
+		<servlet-name>search</servlet-name>
 		<servlet-class>com.uwgroup10.SearchServlet</servlet-class>
 		<load-on-startup>1</load-on-startup>
 	</servlet>
 	<servlet-mapping>
-		<servlet-name>app search</servlet-name>
+		<servlet-name>search</servlet-name>
 		<url-pattern>/search</url-pattern>
 	</servlet-mapping>
 </web-app>
