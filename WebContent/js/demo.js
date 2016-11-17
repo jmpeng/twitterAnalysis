@@ -32,6 +32,36 @@ $(document).ready(function() {
     $traits    = $('.traits'),
     $results   = $('.results');
 
+/**
+   * 1. Search twitter
+   * 2. Call the API
+   * 3. Call the methods to display the results
+   */
+  $('.twittersearch').click(function(){
+    $('.twittersearch').blur();
+    $content.val('');
+    updateWordsCount();
+
+    $.ajax({
+      url: 'search',
+      data: {keywords: 'good'},
+      success: function(response) {
+
+        if (response.error) {
+          $content.val(response.error);
+        } else {
+          $content.val(response);
+          updateWordsCount();
+        }
+
+      },
+      error: function(request, textStatus, errorThrown)
+      {
+        $content.val("error:" + textStatus);
+      }
+    });
+  });
+
   /**
    * Clear the "textArea"
    */

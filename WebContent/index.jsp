@@ -73,8 +73,8 @@
 			<input type="text" style="height:40px;width:550px" class="form-control" placeholder="type into the keyword">
 		</div>
 		<div>
-			<button class="btn btn-lg btn-primary" type="button" style=" margin-right:20px">Twitter Search</button>
-			<button class="btn btn-lg btn-primary" type="button">Twitter Analysis</button>
+			<button class="btn btn-lg btn-primary twittersearch" type="button" style="text-center">Twitter Search</button>
+<!--			<button class="btn btn-lg btn-primary" type="button">Twitter Analysis</button>    -->
 		</div>
 	</form>
 </div>
