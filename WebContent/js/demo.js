@@ -42,10 +42,14 @@ $(document).ready(function() {
     $content.val('');
     updateWordsCount();
 
+      console.log($('.input-box').val());
+
     $.ajax({
       url: 'search',
-      data: {keywords: 'good'},
-      success: function(response) {
+      // data: {keywords: 'good'},
+        data: {keywords: $('.input-box').val()},
+
+        success: function(response) {
 
         if (response.error) {
           $content.val(response.error);

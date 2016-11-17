@@ -72,7 +72,7 @@
 	<img src="images/logo.png" width="600" height="300" />
 	<form role="form">
 		<div>
-			<input type="text" style="height:40px;width:550px" class="form-control" placeholder="type into the keyword">
+			<input type="text" style="height:40px;width:550px" class="form-control input-box" placeholder="type into the keyword">
 		</div>
 		<div>
 			<button class="btn btn-lg btn-primary twittersearch" type="button" style="text-center">Twitter Search</button>
