@@ -18,6 +18,8 @@
 	<link rel="stylesheet" href="css/watson-bootstrap-dark.css">
 	<link rel="stylesheet" href="css/banner.css">
 	<link rel="stylesheet" href="css/style.css"/>
+
+	<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
 	<!-- Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
@@ -188,7 +190,7 @@
 		Visualization of Personality Data
 		<div id="myDiv" style="width: 700px; height: 700px;"></div>
 	</div>
-	<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+
 	<script type="text/javascript" src="js/d3.v2.min.js"></script>
 	<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
 	<script type="text/javascript" src="js/demo.js"></script>
