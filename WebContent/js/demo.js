@@ -101,7 +101,6 @@ $(document).ready(function() {
         } else {
           $results.show();
           showTraits(response);
-          // showTextSummary(response);
           showVizualization(response);
         }
 
@@ -181,20 +180,6 @@ $(document).ready(function() {
     }
   }
 
-  /**
-   * Construct a text representation for big5 traits crossing, facets and
-   * values.
-   */
-  function showTextSummary(data) {
-    console.log('showTextSummary()');
-    var paragraphs = textSummary.assemble(data.tree);
-    var div = $('.summary-div');
-    $('.outputWordCountMessage').text(data.word_count_message ? '**' + data.word_count_message + '.' : ''); 
-    div.empty();
-    paragraphs.forEach(function(sentences) {
-      $('<p></p>').text(sentences.join(' ')).appendTo(div);
-    });
-  }
 
 /**
  * Renders the sunburst visualization. The parameter is the tree as returned
