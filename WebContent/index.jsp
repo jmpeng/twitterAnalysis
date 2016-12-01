@@ -15,7 +15,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
 	<link rel="icon" href="images/favicon.ico" type="image/x-icon">
-	<link rel="stylesheet" href="css/watson-bootstrap-dark.css">
+	<link rel="stylesheet" href="css/bootstrap-dark.css">
 	<link rel="stylesheet" href="css/banner.css">
 	<link rel="stylesheet" href="css/style.css"/>
 
@@ -32,21 +32,6 @@
 <body>
 <div class="row service-container">
 	<div class="col-lg-12 service-header">
-		<!--<div class="row top-nav navbar-fixed-top">
-            <div class="container">
-                <a
-                    href="http://www.ibm.com/smarterplanet/us/en/ibmwatson/developercloud/"
-                    class="top-nav--logo-link"><h3 class="heading left">
-                        <span class="top-nav--logo-wdc">University of Windsor</span>    Group 10 Project
-                    </h3></a>
-                <nav class="top-nav--nav">
-                    <li class="top-nav--nav-item"><a></a></li>
-                    <li class="top-nav--nav-item"><a></a></li>
-                    <li class="top-nav--nav-item"><a></a></li>
-                    <li class="top-nav--nav-item"><a></a></li>
-                </nav>
-            </div>
-        </div>-->
 		<div style="background-image:url(images/bg1.jpg)" class="row header">
 			<div class="container">
 				<div
@@ -88,17 +73,6 @@
 				<div class="well">
 					<div class="form-group row">
 						<div style="padding: 0px;" class="col-lg-12 col-xs-12">
-							<%--<label class="col-lg-6 col-md-6 col-xs-6 control-label">Choose Language:</label>--%>
-							<%--<div class="col-lg-6 col-md-6 col-xs-6 sample-radio-list">--%>
-								<%--<div class="sample-radio-container">--%>
-									<%--<label><input id="english_radio" type="radio"--%>
-										<%--name="sample_text" value="en" checked class="sample-radio">English</label>--%>
-								<%--</div>--%>
-								<%--<div class="sample-radio-container">--%>
-									<%--<label><input type="radio" name="sample_text"--%>
-										<%--value="es" class="sample-radio">spanish</label>--%>
-								<%--</div>--%>
-							<%--</div>--%>
 							<textarea rows="12" required="true" name="text"
 								placeholder="content"
 								class="content form-control"></textarea>
@@ -122,31 +96,6 @@
 					</div>
 				</div>
 			</div>
-			<%--<div class="col-lg-6 col-md-12 col-xs-12">--%>
-				<%--<div style="display: none;"--%>
-					<%--class="form-group row loading text-center loading">--%>
-					<%--<h2>&nbsp;</h2>--%>
-					<%--<img src="images/watson.gif">--%>
-				<%--</div>--%>
-				<%--<div style="display: none;" class="form-group row error">--%>
-					<%--<h2>&nbsp;</h2>--%>
-					<%--<div class="well">--%>
-						<%--<p class="errorMsg"></p>--%>
-					<%--</div>--%>
-				<%--</div>--%>
-				<%--<div style="display: none;" class="results">--%>
-					<%--<h2>Personality*</h2>--%>
-					<%--<div class="well">--%>
-						<%--<div class="summary-div"></div>--%>
-						<%--<div style="color: gray" class="text-right">--%>
-							<%--<em class="small">*Compared to most people who participated in our surveys</em>--%>
-						<%--</div>--%>
-						<%--<div style="color: gray" class="text-right">--%>
-							<%--<em class="small outputWordCountMessage"></em>--%>
-						<%--</div>--%>
-					<%--</div>--%>
-				<%--</div>--%>
-			<%--</div>--%>
 			<div style="display: none;" class="results">
 				<div class="row">
 					<div>
@@ -196,10 +145,5 @@
 	<script type="text/javascript" src="js/demo.js"></script>
 	<script type="text/javascript" src="js/personality.js"></script>
     <script type="text/javascript" src="js/string-utils.js"></script>
-    <script type="text/javascript" src="js/i18n.js"></script>
-	<script type="text/javascript" src="js/textsummary.js"></script>
-    <script type="text/javascript">
-//        textSummary.init('json');
-    </script>
 </body>
 </html>
