@@ -4,7 +4,6 @@
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 <c:set var="language" value="${not empty param.language ? param.language : not empty language ? language : pageContext.request.locale}" scope="session" />
 <fmt:setLocale value="${language}" />
-<fmt:setBundle basename="com.ibm.cloudoe.samples.i18n.messages" />
 <!DOCTYPE html>
 <html lang="${language}">
 
@@ -60,8 +59,7 @@
 			<input type="text" style="height:40px;width:550px" class="form-control input-box" placeholder="type into the keyword">
 		</div>
 		<div>
-			<button class="btn btn-lg btn-primary twittersearch" type="button" style="text-center">Twitter Search</button>
-<!--			<button class="btn btn-lg btn-primary" type="button">Twitter Analysis</button>    -->
+			<button class="btn btn-lg btn-primary twittersearch text-center" type="button">Twitter Search</button>
 		</div>
 	</form>
 </div>
@@ -69,7 +67,6 @@
 		<div class="row">
 			<div class="col-lg-12 col-md-12 col-xs-12">
 				<h2>Twitter search results / Text Input</h2>
-		<!--		<p>Please input text</p>   -->
 				<div class="well">
 					<div class="form-group row">
 						<div style="padding: 0px;" class="col-lg-12 col-xs-12">
@@ -140,10 +137,8 @@
 		<div id="myDiv" style="width: 700px; height: 700px;"></div>
 	</div>
 
-	<script type="text/javascript" src="js/d3.v2.min.js"></script>
 	<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
 	<script type="text/javascript" src="js/demo.js"></script>
-	<script type="text/javascript" src="js/personality.js"></script>
     <script type="text/javascript" src="js/string-utils.js"></script>
 </body>
 </html>
