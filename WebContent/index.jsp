@@ -139,6 +139,5 @@
 
 	<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
 	<script type="text/javascript" src="js/demo.js"></script>
-    <script type="text/javascript" src="js/string-utils.js"></script>
 </body>
 </html>
